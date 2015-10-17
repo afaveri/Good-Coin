@@ -19,6 +19,8 @@
 		4A4B52E71BD0516B00973C7A /* GCCharitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B52E61BD0516B00973C7A /* GCCharitiesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4A4B52EA1BD0537600973C7A /* GCFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B52E91BD0537600973C7A /* GCFeedbackViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4A4B52ED1BD053A800973C7A /* GCDonationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B52EC1BD053A800973C7A /* GCDonationsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4A4B52F71BD05CC800973C7A /* GCRecentDonationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B52F61BD05CC800973C7A /* GCRecentDonationsCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4A4B52FD1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B52FC1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		4A4B52E91BD0537600973C7A /* GCFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFeedbackViewController.m; sourceTree = "<group>"; };
 		4A4B52EB1BD053A800973C7A /* GCDonationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDonationsViewController.h; sourceTree = "<group>"; };
 		4A4B52EC1BD053A800973C7A /* GCDonationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDonationsViewController.m; sourceTree = "<group>"; };
+		4A4B52F51BD05CC800973C7A /* GCRecentDonationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCRecentDonationsCollectionViewController.h; sourceTree = "<group>"; };
+		4A4B52F61BD05CC800973C7A /* GCRecentDonationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCRecentDonationsCollectionViewController.m; sourceTree = "<group>"; };
+		4A4B52FB1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCRecentDonationsCollectionViewCell.h; sourceTree = "<group>"; };
+		4A4B52FC1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCRecentDonationsCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,14 +123,10 @@
 				4A4B52A71BD0144D00973C7A /* GCAppDelegate.m */,
 				4A4B52D91BD0494E00973C7A /* GCMainTabBarController.h */,
 				4A4B52DA1BD0494E00973C7A /* GCMainTabBarController.m */,
-				4A4B52DC1BD0511100973C7A /* GCHomeViewController.h */,
-				4A4B52DD1BD0511100973C7A /* GCHomeViewController.m */,
-				4A4B52EB1BD053A800973C7A /* GCDonationsViewController.h */,
-				4A4B52EC1BD053A800973C7A /* GCDonationsViewController.m */,
-				4A4B52E81BD0537600973C7A /* GCFeedbackViewController.h */,
-				4A4B52E91BD0537600973C7A /* GCFeedbackViewController.m */,
-				4A4B52E51BD0516B00973C7A /* GCCharitiesViewController.h */,
-				4A4B52E61BD0516B00973C7A /* GCCharitiesViewController.m */,
+				4A4B52EE1BD05B6400973C7A /* Home */,
+				4A4B52EF1BD05B8400973C7A /* Donations */,
+				4A4B52F01BD05B9600973C7A /* Feedback */,
+				4A4B52F11BD05BA200973C7A /* Charities */,
 				4A4B52B21BD0144D00973C7A /* Assets.xcassets */,
 				4A4B52B41BD0144D00973C7A /* LaunchScreen.storyboard */,
 				4A4B52B71BD0144D00973C7A /* Info.plist */,
@@ -158,6 +160,46 @@
 				4A4B52CD1BD0144D00973C7A /* Info.plist */,
 			);
 			path = "Good CoinUITests";
+			sourceTree = "<group>";
+		};
+		4A4B52EE1BD05B6400973C7A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B52DC1BD0511100973C7A /* GCHomeViewController.h */,
+				4A4B52DD1BD0511100973C7A /* GCHomeViewController.m */,
+				4A4B52F51BD05CC800973C7A /* GCRecentDonationsCollectionViewController.h */,
+				4A4B52F61BD05CC800973C7A /* GCRecentDonationsCollectionViewController.m */,
+				4A4B52FB1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.h */,
+				4A4B52FC1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4A4B52EF1BD05B8400973C7A /* Donations */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B52EB1BD053A800973C7A /* GCDonationsViewController.h */,
+				4A4B52EC1BD053A800973C7A /* GCDonationsViewController.m */,
+			);
+			name = Donations;
+			sourceTree = "<group>";
+		};
+		4A4B52F01BD05B9600973C7A /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B52E81BD0537600973C7A /* GCFeedbackViewController.h */,
+				4A4B52E91BD0537600973C7A /* GCFeedbackViewController.m */,
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
+		4A4B52F11BD05BA200973C7A /* Charities */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B52E51BD0516B00973C7A /* GCCharitiesViewController.h */,
+				4A4B52E61BD0516B00973C7A /* GCCharitiesViewController.m */,
+			);
+			name = Charities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4B52A81BD0144D00973C7A /* GCAppDelegate.m in Sources */,
+				4A4B52F71BD05CC800973C7A /* GCRecentDonationsCollectionViewController.m in Sources */,
 				4A4B52EA1BD0537600973C7A /* GCFeedbackViewController.m in Sources */,
 				4A4B52A51BD0144D00973C7A /* main.m in Sources */,
 				4A4B52DB1BD0494E00973C7A /* GCMainTabBarController.m in Sources */,
 				4A4B52E71BD0516B00973C7A /* GCCharitiesViewController.m in Sources */,
+				4A4B52FD1BD1BF5D00973C7A /* GCRecentDonationsCollectionViewCell.m in Sources */,
 				4A4B52DE1BD0511100973C7A /* GCHomeViewController.m in Sources */,
 				4A4B52ED1BD053A800973C7A /* GCDonationsViewController.m in Sources */,
 				4A4B52B11BD0144D00973C7A /* Good_Coin.xcdatamodeld in Sources */,
